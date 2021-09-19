@@ -1,0 +1,46 @@
+:root{
+    --botones-height: 36px;
+    --nav-bg-color: #F8F9FD;
+}
+
+html{
+    font-family: 'Times New Roman';
+}
+
+.nav{
+    background-color: var(--nav-bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+}
+
+.botones button{
+    height: var(--botones-height);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.botones button.outlined{
+    border: 1px solid #3d5271;
+    background-color: var(--nav-bg-color);
+    color: #3d5271;
+}
+
+.logo img{
+    max-height: var(--botones-height);
+}
+
+.links{
+    color: #3d5271
+}
+
+.links a{
+    margin: 0 0.4rem;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+

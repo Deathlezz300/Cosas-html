@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    background-color: plum ;
+    
+}
+
+
+h1 {
+    font-family: 'Times New Roman';
+    font-size: 4rem;
+    color: red;
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    h1{
+        color: purple;
+    }
+}
+
+@media screen and(min-width:1024px){
+    h1{
+        text-align: justify;
+        color: yellow;
+    }
+}
+
+img.pepe{
+    width: 250px;
+}
+
+table{
+    border: 2px solid blueviolet;
+    border: dashed 2px green;
+    border-left-style: dashed;
+    border-collapse: collapse;
+}
+
+
+
+table td, table td{
+    border: tomato 2px dashed;
+    padding: 4px 6px;
+}
+
+a{
+    color: black
+}
+
+a:hover{
+    color:green
+}
+
+a:visited{
+    color:red
+}
+
+a:active{
+    color:blue
+}
+
+ul{
+    list-style: circle;
+}
+
+button{
+    margin: 12px 2px 0;
+    background-color: red;
+    border:none;
+    color: white;
+    padding: 0.4rem 0.6rem;
+}
+/*
+Padding es el tamaño de un boton u objeto y margin es el espacio que hay
+desde la margen hacia nuestro objeto
+*/
+
+button:hover{
+    background: yellowgreen;
+}
