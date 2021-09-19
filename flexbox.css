@@ -10,6 +10,7 @@ html{
 .nav{
     background-color: var(--nav-bg-color);
     display: flex;
+    /*Lo que hace es todas las cosas que esten en esta clase esten en una misma linea*/
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +29,12 @@ html{
     color: #3d5271;
 }
 
+.botones button.primary{
+    border: 1px solid #3d5271;
+    background: #3d5271;
+    color: white;
+}
+
 .logo img{
     max-height: var(--botones-height);
 }
@@ -42,5 +49,21 @@ html{
 
 .links a:hover{
     text-decoration: underline;
+}
+
+section{
+    /*Con estas lineas de codigo se crean varias columnas apartir de una seccion*/
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 2rem;
+}
+
+.content{
+    align-content: justify;
+    text-align: justify;
+    margin: 4rem 8rem;
+    padding: 1rem 1rem;
+    background-color: lavender;
+    border-radius: 8px;
 }
 
